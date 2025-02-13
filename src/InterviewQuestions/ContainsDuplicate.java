@@ -1,0 +1,15 @@
+package InterviewQuestions;
+
+//LeetCode 217
+import java.util.HashSet;
+
+public class ContainsDuplicate {
+    public boolean containsDuplicate(int[] nums) {
+        HashSet<Integer> seen = new HashSet<>();
+        for(int n: nums) {
+            if(seen.contains(n)) return true;
+            seen.add(n);
+        }
+        return false;
+    }
+}
