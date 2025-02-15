@@ -1,4 +1,8 @@
 package AbstractClasses;
+//Abstract classes can only have abstract methods.
+//Abstract methods are only defined in abstract classes, there is no body of methods.
+//We have to make a method body of abstract method in concrete class after extending Abstract class
+//We cannot create object of Abstract class.
 
 public abstract class Item {
     private String id;
