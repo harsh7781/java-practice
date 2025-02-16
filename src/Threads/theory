@@ -1,0 +1,17 @@
+- Threads are lightweight subprocesses, representing the smallest unit of execution with separate paths.
+- The main advantage of multiple threads is efficiency (allowing multiple things at the same time).
+- For example, in MS Word, one thread automatically formats the document while another thread is taking user input.
+- Additionally, multithreading ensures quick response, as other threads can continue execution even if one gets stuck, keeping the application responsive.
+
+Thread States :
+1. New
+2. Runnable
+3. Waiting
+4. Running
+5. Dead
+
+     start()             run()               sleep(), wait()
+New ---------> Runnable ---------> Running -----------> Waiting
+
+Runnable -----stop()----> Dead
+Waiting -----notify() ---->Runnable
