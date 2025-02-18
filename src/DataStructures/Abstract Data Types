@@ -1,0 +1,8 @@
+An Abstract Data Type (ADT) in Java is a type (or class) for objects whose behavior is defined by a set of values and a set of operations. The ADT defines the logical form of the data type, but not its implementation.
+
+Abstract Data Type (ADT) in Java
+Definition: An ADT is a model for data structures that specifies the type of data stored, the operations supported on them, and the types of parameters of the operations. It does not specify how the data type is implemented.
+
+Example: Stack ADT
+
+A stack is a classic example of an ADT. It supports operations like push, pop, peek, and isEmpty.

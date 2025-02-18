@@ -1,0 +1,51 @@
+### ** Time and Space Complexity in Java **
+
+In Java (and computer science in general), time complexity refers to the amount of time an algorithm takes to run as a function of the input size,
+while space complexity refers to the amount of memory an algorithm uses.
+
+- Time Complexity: Measures the number of operations performed relative to the input size **n**.
+- Space Complexity: Measures the additional memory required by the algorithm, excluding the input size.
+
+------------------------------------------
+
+### ** Time and Space Complexity Table **
+
+Below is a table summarizing the time and space complexity for common operations on various data structures and sorting algorithms:
+
+#### ** 1. Data Structures Complexity Table **
+|     Data Structure          | Access   | Search   | Insertion                       | Deletion         | Space Complexity |
+|-----------------------------|----------|----------|---------------------------------|------------------|------------------|
+| Array                       | O(1)     | O(n)     | O(n)                            | O(n)             | O(n)             |
+| ArrayList                   | O(1)     | O(n)     | O(n) (worst) / O(1) (amortized) | O(n)             | O(n)             |
+| LinkedList                  | O(n)     | O(n)     | O(1) (head/tail)                | O(1) (head/tail) | O(n)             |
+| Stack (Array-based)         | O(1)     | O(n)     | O(1)                            | O(1)             | O(n)             |
+| Stack (LinkedList-based)    | O(n)     | O(n)     | O(1)                            | O(1)             | O(n)             |
+| Queue (Array-based)         | O(1)     | O(n)     | O(1)                            | O(1)             | O(n)             |
+| Queue (LinkedList-based)    | O(n)     | O(n)     | O(1)                            | O(1)             | O(n)             |
+| HashMap / HashSet           | O(1)     | O(1)     | O(1)                            | O(1)             | O(n)             |
+| TreeMap (Red-Black Tree)    | O(log n) | O(log n) | O(log n)                        | O(log n)         | O(n)             |
+| Priority Queue (Heap-based) | O(n)     | O(log n) | O(log n)                        | O(log n)         | O(n)             |
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+#### ** 2. Sorting Algorithms Complexity Table **
+| Algorithm      | Best Time  | Average Time | Worst Time | Space Complexity | Stable?                        |
+|----------------|------------|--------------|------------|------------------|--------------------------------|
+| Bubble Sort    | O(n)       | O(n²)        | O(n²)      | O(1)             | ✅                             |
+| Selection Sort | O(n²)      | O(n²)        | O(n²)      | O(1)             | ❌                             |
+| Insertion Sort | O(n)       | O(n²)        | O(n²)      | O(1)             | ✅                             |
+| Merge Sort     | O(n log n) | O(n log n)   | O(n log n) | O(n)             | ✅                             |
+| Quick Sort     | O(n log n) | O(n log n)   | O(n²)      | O(log n)         | ❌ (Depends on implementation) |
+| Heap Sort      | O(n log n) | O(n log n)   | O(n log n) | O(1)             | ❌                             |
+| Counting Sort  | O(n + k)   | O(n + k)     | O(n + k)   | O(k)             | ✅                             |
+| Radix Sort     | O(nk)      | O(nk)        | O(nk)      | O(n + k)         | ✅                             |
+| Bucket Sort    | O(n + k)   | O(n + k)     | O(n²)      | O(n)             | ✅                             |
+
+---
+
+### ** Conclusion **
+- Arrays and ArrayLists are efficient for random access but slow for insertions/deletions.
+- LinkedLists are efficient for insertions/deletions but slow for access/search.
+- HashMaps provide O(1) time complexity for most operations but require extra space.
+- Tree-based structures (TreeMap, BST, Red-Black Trees) ensure O(log n) operations.
+- Sorting algorithms vary based on stability and performance, with **Merge Sort** and **Quick Sort** being commonly used.

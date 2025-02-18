@@ -38,7 +38,7 @@ public class RunnableVsThread {
         };
         Runnable obj2 = () -> {
             for(int i = 1; i <= 5; i++) {
-                System.out.println("running m1");
+                System.out.println("running m2");
                 try { Thread.sleep(10);} catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }

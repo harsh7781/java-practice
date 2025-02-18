@@ -1,0 +1,7 @@
+Arrays are fundamental structures in Java that allow us to store multiple values of the same type in a single variable.
+They are useful for storing and managing collections of data.
+Arrays in Java are objects, which makes them work differently from arrays in C/C++ in terms of memory management.
+
+For primitive arrays, elements are stored in a contiguous memory location.
+For non-primitive arrays, references are stored at contiguous locations, but the actual objects may be at different locations in memory.
+
