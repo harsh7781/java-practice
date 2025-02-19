@@ -1,0 +1,56 @@
+Imagine you have a row of numbers written on paper, and you want to arrange them in ascending order (smallest to largest).
+
+Instead of bubbling up like in Bubble Sort, you decide to find the smallest number and place it in the correct position.
+
+This sorting method is called Selection Sort because at each step, you select the smallest element and put it in its right place. 🏆
+
+How Selection Sort Works (Step-by-Step)
+Let’s say we have this list of numbers:
+[5, 3, 8, 4, 2]
+
+Step 1: Find the Smallest Number and Swap It
+Scan the entire array and find the smallest number (2).
+Swap 2 with the first element (5).
+Original	        Find Min	    Swap
+[5, 3, 8, 4, 2]	    Min = 2	        [2, 3, 8, 4, 5]
+✅ Now, 2 is in its correct place!
+
+Step 2: Find the Smallest Number in the Remaining List
+Ignore the first element (2).
+Find the smallest number in [3, 8, 4, 5] → It's 3.
+No need to swap (already in the correct place).
+Array State	            Min	    Swap?
+[2, **3**, 8, 4, 5]	    3	    No
+✅ Now, 3 is in its correct place!
+
+Step 3: Find the Smallest Number in the Remaining List
+Ignore 2 and 3, find the smallest in [8, 4, 5] → It's 4.
+Swap 4 with 8.
+Array State	            Min	        Swap
+[2, 3, **8, 4, 5]	    4	        [2, 3, 4, 8, 5]
+✅ Now, 4 is in its correct place!
+
+Step 4: Find the Smallest Number in the Remaining List
+Ignore 2, 3, 4, find the smallest in [8, 5] → It's 5.
+Swap 5 with 8.
+Array State	            Min     	Swap
+[2, 3, 4, **8, 5]	    5	        [2, 3, 4, 5, 8]
+✅ Now, 5 is in its correct place!
+
+Step 5: Last Number is Already Sorted
+Only 8 remains → No action needed!
+🎉 Sorted List: [2, 3, 4, 5, 8] 🎉
+
+
+Why Selection Sort is Slow?
+🔴 It takes O(n²) time, which means for large lists, it’s very slow. 🚀
+🔴 It doesn’t stop early, even if the list is already sorted.
+🔴 Better sorting algorithms exist, like QuickSort and MergeSort.
+
+✅ Good for small datasets or when swaps are costly.
+
+Key Takeaways
+✔ Simple to understand 😊
+✔ Always makes the same number of swaps (n-1)
+✔ Good for small lists but bad for large lists
+✔ Unstable Sort (does not preserve order of equal elements)

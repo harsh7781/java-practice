@@ -1,0 +1,51 @@
+Imagine you have a row of numbers written on pieces of paper, and you want to arrange them in ascending order (smallest to largest).
+
+You decide to do this by comparing two numbers at a time and swapping them if they are in the wrong order.
+You keep doing this again and again until everything is sorted.
+
+This simple way of sorting is called Bubble Sort because the largest numbers slowly "bubble up" to their correct position, just like air bubbles rise to the surface of water. 💨💦
+
+How Bubble Sort Works (Step-by-Step)
+Let’s say we have this list of numbers:
+[5, 3, 8, 4, 2]
+
+We will compare and swap adjacent numbers if they are in the wrong order. Let’s go through it step by step!
+
+Pass 1 (Largest Number Moves to the End)
+We start from the left and compare each pair of numbers:
+
+Step	Compare	  Swap?	            New List
+1️⃣	    5 and 3	  ✅ Yes (swap)	     [3, 5, 8, 4, 2]
+2️⃣	    5 and 8	  ❌ No	             [3, 5, 8, 4, 2]
+3️⃣	    8 and 4	  ✅ Yes (swap)	     [3, 5, 4, 8, 2]
+4️⃣	    8 and 2	  ✅ Yes (swap)	     [3, 5, 4, 2, 8]
+Now, 8 is in its correct position at the end! 🎉
+
+Pass 2 (Next Largest Number Moves Up)
+Now, we repeat the process, but we ignore the last number (8) because it's already sorted.
+
+Step	Compare	    Swap?	        New List
+1️⃣	     3 and 5	❌ No	        [3, 5, 4, 2, 8]
+2️⃣	     5 and 4	✅ Yes (swap)	[3, 4, 5, 2, 8]
+3️⃣	     5 and 2	✅ Yes (swap)	[3, 4, 2, 5, 8]
+Now, 5 is in its correct position! 🚀
+
+Pass 3 (Sorting the Remaining Elements)
+We ignore the last two numbers (5 and 8) and repeat:
+
+Step	Compare	    Swap?	        New List
+1️⃣	    3 and 4	    ❌ No	        [3, 4, 2, 5, 8]
+2️⃣	    4 and 2	    ✅ Yes (swap)	[3, 2, 4, 5, 8]
+Pass 4 (Final Pass)
+Only two numbers left to check:
+
+Step	Compare	    Swap?	        New List
+1️⃣	    3 and 2	    ✅ Yes (swap)	[2, 3, 4, 5, 8]
+Now, the list is fully sorted! ✅🎉
+
+
+Key Points
+✅ Worst Case Time Complexity: O(n^2)
+✅ Best Case Time Complexity: O(n) (if already sorted)
+✅ Space Complexity: O(1) (in-place sorting)
+✅ Stable Sort: Yes (maintains relative order of equal elements)
