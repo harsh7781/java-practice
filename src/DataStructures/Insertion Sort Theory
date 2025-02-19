@@ -1,0 +1,66 @@
+What is Insertion Sort?
+Imagine you’re playing cards, and you are picking them one by one. You want to arrange them in ascending order in your hand.
+
+Whenever you pick a new card, you compare it with the cards already in your hand and insert it at the correct position.
+
+That’s exactly how Insertion Sort works! 🃏✨
+
+How Insertion Sort Works (Step-by-Step)
+Let’s sort this list:
+[5, 3, 8, 4, 2]
+
+Step 1: Start with the Second Element
+
+The first element (5) is already sorted ✅
+Take the second element (3) and insert it into the correct position.
+Swap 3 and 5 because 3 is smaller.
+Step	    List
+Start	    [5, 3, 8, 4, 2]
+Insert 3	[3, 5, 8, 4, 2]
+
+
+Step 2: Insert 8
+
+Take the third element (8).
+It’s already in the correct place because 8 > 5.
+Step	    List
+Insert 8	[3, 5, 8, 4, 2]
+
+
+Step 3: Insert 4
+
+Compare 4 with 8 → Swap
+Compare 4 with 5 → Swap
+Compare 4 with 3 → Stop (4 is greater than 3)
+Step	    List
+Insert 4	[3, 4, 5, 8, 2]
+
+
+Step 4: Insert 2
+
+Compare 2 with 8 → Swap
+Compare 2 with 5 → Swap
+Compare 2 with 4 → Swap
+Compare 2 with 3 → Swap
+Step	List
+Insert 2	[2, 3, 4, 5, 8]
+
+🎉 Sorted List: [2, 3, 4, 5, 8] 🎉
+
+
+Time Complexity of Insertion Sort
+
+Case	                        Time Complexity
+--------------------------      ----------------------
+Best Case (Already Sorted)	    O(n)
+Average Case	                O(n²)
+Worst Case (Reversed Order)	    O(n²)
+--------------------------      ----------------------
+🔹 Good for nearly sorted data ✅
+🔹 Slow for large lists ❌
+
+Key Takeaways
+✅ Good for small datasets
+✅ Stable Sort (Preserves order of equal elements)
+✅ Faster than Bubble & Selection Sort in some cases
+❌ Slower than Merge Sort & Quick Sort for big data
