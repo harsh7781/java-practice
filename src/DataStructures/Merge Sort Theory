@@ -1,0 +1,74 @@
+What is Merge Sort?
+Merge Sort is a Divide and Conquer algorithm. Instead of sorting the entire array at once, it splits it into smaller pieces, sorts those, and then merges them back together.
+
+🛠️ Think of it like this:
+Imagine you have a messy deck of cards. Instead of sorting all cards together, you:
+
+Divide them into two piles.
+Keep dividing until each pile has just one card.
+Merge the sorted piles back together.
+That’s exactly what Merge Sort does! 🚀
+
+How Merge Sort Works (Step-by-Step)
+Let's say we want to sort this array:
+[8, 3, 5, 2, 9, 4]
+
+Step 1: Divide the Array
+
+We keep splitting the array into two halves until each sub-array has only one element.
+
+[8, 3, 5, 2, 9, 4]
+=> [8, 3, 5]  |  [2, 9, 4]
+=> [8] [3, 5]  |  [2] [9, 4]
+=> [8] [3] [5]  |  [2] [9] [4]
+At this stage, all sub-arrays have only one element (which means they are already sorted). ✅
+
+Step 2: Merge the Arrays
+
+Now, we merge the sub-arrays in sorted order.
+
+Merge [3] and [5] → [3, 5]
+Merge [9] and [4] → [4, 9]
+Merge [8] and [3, 5] → [3, 5, 8]
+Merge [2] and [4, 9] → [2, 4, 9]
+Merge [3, 5, 8] and [2, 4, 9] → Final Sorted Array
+
+[2, 3, 4, 5, 8, 9] ✅
+
+--- How It Works --
+Let's break it down for [8, 3, 5, 2, 9, 4].
+
+1️⃣ Initial Call: mergeSort(arr, 0, 5)
+2️⃣ Splitting Phase: Recursively divides the array.
+3️⃣ Merging Phase: Combines smaller sorted arrays into larger ones.
+
+✅ Final Output: [2, 3, 4, 5, 8, 9]
+
+----- Time Complexity of Merge Sort ----
+
+Case	        Time Complexity
+---------      ------------------
+Best Case	    O(n log n)
+Average Case	O(n log n)
+Worst Case	    O(n log n)
+-----------------------------------
+
+Why O(n log n)?
+
+Dividing the array takes O(log n) steps.
+Merging takes O(n) time in each step.
+So, Total: O(n log n) ✅
+
+
+-----Advantages of Merge Sort---
+✅ Stable Sort: Maintains the relative order of equal elements.
+✅ Works Well for Large Datasets: Performs consistently in all cases.
+✅ Good for Linked Lists: Since it works on sequential data efficiently.
+
+--- Disadvantages of Merge Sort -----
+❌ Uses Extra Space: Needs extra memory for the temporary arrays.
+❌ Slower for Small Arrays: Other sorting algorithms like Insertion Sort might be faster.
+
+Final Thought 💭
+Merge Sort is one of the fastest sorting algorithms for large datasets! 🚀
+It breaks down the problem into smaller pieces and efficiently merges them back together.

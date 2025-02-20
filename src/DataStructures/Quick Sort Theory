@@ -1,0 +1,60 @@
+What is QuickSort?
+Imagine you have a messy pile of books 📚, and you want to sort them quickly.
+Instead of picking them one by one (like Insertion Sort), you do this:
+
+Pick a random book 📖 (called the Pivot).
+Move smaller books to the left and bigger books to the right.
+Now, both left and right halves are still unsorted!
+Repeat the process on the left and right halves until all books are sorted.
+That’s exactly how QuickSort works! 🚀
+
+How QuickSort Works (Step-by-Step)
+
+Let's say we need to sort this list:
+[8, 3, 5, 2, 9, 4]
+
+Step 1: Choose a Pivot
+
+We choose 8 as the pivot.
+Now, move smaller numbers to the left and bigger numbers to the right.
+
+Pivot	Left (smaller)	Right (bigger)
+8	    [3, 5, 2, 4]	[9]
+Now, we have two unsorted halves.
+
+
+
+Step 2: Apply QuickSort on Left Half [3, 5, 2, 4]
+
+Choose 3 as the pivot.
+Move smaller numbers left, bigger numbers right.
+Pivot	Left	Right
+3	    [2]	    [5, 4]
+
+
+Step 3: Apply QuickSort on Right Half [5, 4]
+
+Choose 5 as the pivot.
+Move smaller numbers left.
+Pivot	Left	Right
+5	    [4]	    []
+Now, we combine everything back:
+
+✅ [2, 3, 4, 5, 8, 9] ✅ 🎉 Sorted!
+
+
+Time Complexity of QuickSort
+-----------------------------      ------------------------------
+Case	                            Time Complexity
+----------------------------        -----------------
+Best Case	                        O(n log n)
+Average Case	                    O(n log n)
+Worst Case (Already Sorted Data)	O(n²)
+-------------------------------     -------------------
+
+
+Why is QuickSort Fast?
+✅ It uses Divide & Conquer: Breaks the array into smaller parts.
+✅ No extra memory needed: Unlike Merge Sort, which uses extra space.
+✅ Works well for large datasets!
+
