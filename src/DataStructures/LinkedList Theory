@@ -1,0 +1,75 @@
+What is a Linked List?
+A Linked List is a data structure where each element (node) is linked to the next.
+ Unlike an array, linked lists don’t store elements in contiguous memory locations.
+
+📌 Key Features of Linked List:
+✅ Dynamic Size: Unlike arrays, they grow/shrink dynamically.
+✅ Efficient Insertions/Deletions: No need to shift elements like arrays.
+❌ No Direct Access: Cannot access an element directly using an index.
+
+Types of Linked Lists
+1️⃣ Singly Linked List (Each node has data + next)
+2️⃣ Doubly Linked List (Each node has data + next + prev)
+3️⃣ Circular Linked List (Last node connects back to the first)
+
+1️⃣ Singly Linked List in Java
+Each node contains two parts:
+Data (stores the value)
+Next (stores the reference to the next node)
+
+Singly Linked List Example
+HEAD → [10 | Next] → [20 | Next] → [30 | Next] → NULL
+
+
+2️⃣ Doubly Linked List in Java
+Each node has:
+Data (stores the value)
+Next (points to next node)
+Prev (points to previous node)
+
+Doubly Linked List Example
+NULL ← [10 | Prev | Next] ↔ [20 | Prev | Next] ↔ [30 | Prev | Next] → NULL
+
+
+3️⃣ Circular Linked List in Java
+📌 Difference from Singly/Doubly Linked List?
+In Circular Linked List, the last node connects back to the first.
+No NULL at the end like in singly/doubly lists.
+
+Circular Linked List Example
+HEAD → [10 | Next] → [20 | Next] → [30 | Next] ↻ HEAD
+
+
+
+Time Complexity of Linked List Operations
+-----------------------------------------------------------------------------------
+Operation	        Singly Linked List	Doubly Linked List	Circular Linked List
+----------------   --------------------  ------------------  ---------------------
+Insertion (at end)	    O(n)	               O(n)	               O(n)
+Deletion (from end)	    O(n)	               O(n)	               O(n)
+Traversal	            O(n)	               O(n)	               O(n)
+Searching	            O(n)	               O(n)                O(n)
+--------------------------------------------------------------------------------------
+
+Advantages of Linked Lists
+✅ Dynamic Size: No need to pre-allocate memory.
+✅ Efficient Insertions/Deletions: No shifting needed like in arrays.
+✅ Useful for Stacks, Queues, and Graphs.
+
+Disadvantages of Linked Lists
+❌ More Memory Usage: Needs extra pointers (Next/Prev).
+❌ No Direct Access: Unlike arrays (arr[i]), you must traverse nodes.
+❌ More Complex than Arrays: Code implementation is longer.
+
+When to Use Linked List?
+✅ When frequent insertions/deletions are needed (e.g., stacks, queues).
+✅ When memory allocation is unpredictable.
+✅ When implementing graphs, hash chains, etc.
+
+When NOT to Use Linked List?
+❌ When you need fast random access (Arrays are better).
+❌ When memory is limited (Linked lists need extra space).
+
+Final Thought 💭
+Linked Lists are powerful but complex!
+They are great when you need dynamic memory allocation and frequent insertions/deletions. But for fast access, arrays are better! 🚀
