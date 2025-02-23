@@ -1,27 +1,18 @@
-package DataStructures;
+package DataStructures.LinkedList;
 
-class CNode {
-    int data;
-    CNode next;
-
-    CNode(int data) {
-        this.data = data;
-        this.next = null;
-    }
-}
 
 public class CircularLinkedList {
-    CNode head;
+    Node head;
 
     // Insert at end
     public void insert(int data) {
-        CNode newNode = new CNode(data);
+        Node newNode = new Node(data);
         if (head == null) {
             head = newNode;
             newNode.next = head; // Circular connection
             return;
         }
-        CNode temp = head;
+        Node temp = head;
         while (temp.next != head) {
             temp = temp.next;
         }
@@ -32,7 +23,7 @@ public class CircularLinkedList {
     // Print Circular List
     public void display() {
         if (head == null) return;
-        CNode temp = head;
+        Node temp = head;
         do {
             System.out.print(temp.data + " → ");
             temp = temp.next;

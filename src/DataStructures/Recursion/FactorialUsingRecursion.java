@@ -1,5 +1,5 @@
 //Function calling to itself
-package DataStructures;
+package DataStructures.Recursion;
 
 import java.util.Scanner;
 

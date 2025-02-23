@@ -1,0 +1,58 @@
+What is a Queue?
+A Queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+This means the first element added is the first one to be removed—just like a real-life queue (e.g., waiting in line at a store).
+
+📌 Think of it like a queue at a ticket counter 🎟️:
+
+The first person to arrive gets served first.
+The last person to arrive waits until all ahead are served.
+
+
+Basic Operations of a Queue--->
+-------------------------------------------------------------------------------
+Operation	    Description
+-------------   --------------------------------------------------------------
+Enqueue     	Add an element to the rear (back) of the queue
+Dequeue	        Remove an element from the front of the queue
+Peek (Front)	Get the front element without removing it
+isEmpty	        Check if the queue is empty
+isFull	        Check if the queue is full (in array-based implementation)
+--------------------------------------------------------------------------------
+
+* Time Complexity of Queue Operations
+------------------------------------------------------------
+Operation	Array Queue (Fixed)	    Linked List Queue
+---------   ---------------------   ------------------------
+Enqueue	-           O(1)	                O(1)
+Dequeue	            O(1)	                O(1)
+Peek	            O(1)	                O(1)
+isEmpty	            O(1)	                O(1)
+------------------------------------------------------------
+
+** Types of Queues
+
+1️⃣ Simple Queue – Standard FIFO queue.
+2️⃣ Circular Queue – Reuses empty spaces using a circular array.
+3️⃣ Deque (Double-Ended Queue) – Insert/delete from both ends.
+4️⃣ Priority Queue – Elements are sorted based on priority.
+
+
+** Applications of Queue
+✅ Task Scheduling (OS Process Management) – Jobs execute in FIFO order.
+✅ Printers & Call Centers – First request gets processed first.
+✅ Graph Traversal (BFS Algorithm) – Used to explore neighbors level-wise.
+✅ Message Queues – Used in networking & real-time data processing.
+
+
+** Advantages of Queue
+✅ Efficient Insertions & Deletions (O(1) operations).
+✅ Better Memory Usage (Linked List implementation avoids overflow).
+
+
+** Disadvantages of Queue
+❌ Limited Random Access – You can’t access elements in the middle directly.
+❌ Array-Based Queues can run into overflow issues.
+
+Final Thoughts 💡
+Queues are super useful in solving problems that require FIFO (First-In, First-Out) order.
+Whether it's task scheduling, networking, or graph traversal, queues make handling sequential tasks easier & faster! 🚀

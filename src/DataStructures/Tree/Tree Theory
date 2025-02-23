@@ -1,0 +1,65 @@
+** What is a Tree?
+A tree is a hierarchical data structure that consists of nodes.
+It is non-linear (unlike arrays, linked lists, stacks, and queues).
+
+** Basic Terminology
+--------------------------------------------------------------------------------
+Term	    Description
+---------   ---------------------------------------------------------------------
+Root	    The top-most node of the tree
+Node	    An element in the tree containing data and links to children
+Parent	    A node that has child nodes
+Child	    A node derived from another node (parent)
+Siblings	Nodes that share the same parent
+Leaf Node	A node with no children
+Height	    Number of edges from the root to the deepest node
+Depth	    Number of edges from the root to a given node
+Subtree	    A tree formed by a node and its descendants
+----------------------------------------------------------------------------------
+
+📌 Example of a Tree Structure:
+        1  (Root)
+       / \
+      2   3
+     / \   \
+    4   5   6
+
+
+** Types of Trees :
+1️⃣ Binary Tree – Each node has at most two children.
+2️⃣ Binary Search Tree (BST) – A binary tree where left < root < right.
+3️⃣ Balanced Tree (AVL, Red-Black Tree) – Maintains balance to improve performance.
+4️⃣ Heap (Min Heap & Max Heap) – Specialized tree for priority-based operations.
+5️⃣ Trie (Prefix Tree) – Used for dictionary and string matching.
+6️⃣ N-ary Tree – A tree where each node can have N children.
+
+
+** Tree Traversals :
+1) Inorder -> left - root - right
+2) Preorder -> root - left - right
+3) Postorder -> left - right - root
+
+
+** 2️⃣ Binary Search Tree (BST) in Java :
+A Binary Search Tree (BST) is a special type of binary tree where:
+Left subtree contains values smaller than the node.
+Right subtree contains values greater than the node.
+
+BST Operations :
+Operation	Time Complexity (Avg)	Time Complexity (Worst)
+Insert	        O(log n)	            O(n)
+Search	        O(log n)	            O(n)
+Delete	        O(log n)	            O(n)
+Traversal       O(n)                    O(n)
+
+
+Applications of Trees
+✅ File Systems – Directories follow a tree structure.
+✅ Databases (B-Trees, B+ Trees) – Used for indexing.
+✅ Network Routing – Spanning trees help in routing.
+✅ Artificial Intelligence – Decision Trees used in AI models.
+✅ Expression Trees – Used in compilers and calculators.
+
+Final Thoughts 💡
+Trees are one of the most powerful data structures.
+Whether it's organizing data, searching efficiently, or building AI models, trees are used everywhere in computing! 🚀

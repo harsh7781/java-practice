@@ -1,4 +1,4 @@
-package DataStructures;
+package DataStructures.Searching;
 
 //For BinarySearch to work array elements must be sorted
 
