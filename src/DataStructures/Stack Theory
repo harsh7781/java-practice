@@ -1,0 +1,65 @@
+What is a Stack?
+A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+This means the last element added to the stack is the first one to be removed.
+
+📌 Think of it like a stack of plates 🍽️:
+
+You can only add (push) a plate on top.
+You can only remove (pop) the top plate first.
+
+
+Basic Operations in Stack
+---------------------------------------------------------------
+Operation	        Description
+------------       --------------------------------------------
+Push	            Add an element to the top of the stack
+Pop	                Remove and return the top element
+Peek (Top)	        Get the top element without removing it
+isEmpty	            Check if the stack is empty
+----------------------------------------------------------------
+
+Stacks can be implemented using :
+-> Array (both of fixed size and dynamic)
+-> LinkedList
+
+
+Stack Example :
+Imagine we have an empty stack and we perform these operations:
+
+Push(10)  →  [10]
+Push(20)  →  [10, 20]
+Push(30)  →  [10, 20, 30]
+Pop()  →  Removes 30 → [10, 20]
+Peek()  →  Shows 20 (Top element)
+
+
+Time Complexity of Stack Operations
+--------------------------------------
+Operation	    Time Complexity
+-----------     ----------------------
+Push	            O(1)
+Pop	                O(1)
+Peek	            O(1)
+isEmpty	            O(1)
+--------------------------------------
+
+Applications of Stack :
+✅ Undo/Redo in Editors – Storing previous actions.
+✅ Backtracking (Maze, DFS in Graphs) – Helps in navigating paths.
+✅ Function Calls (Recursion Stack) – Keeps track of function calls.
+✅ Expression Evaluation (Infix to Postfix, Parsing) – Used in compilers.
+
+
+Advantages of Stack :
+✅ Fast Insertions & Deletions: O(1) time complexity.
+✅ Efficient Memory Usage: No shifting like in arrays.
+
+
+Disadvantages of Stack :
+❌ Limited Access: Can only access the top element.
+❌ Overflow Risk (Array-Based Stack): If stack is full.
+❌ Underflow Risk: If stack is empty and we try to pop.
+
+Final Thoughts 💡
+Stacks are super useful for solving problems that follow LIFO (Last-In, First-Out) order.
+Whether you're implementing function calls, backtracking, or expression evaluation, stacks make your life much easier!
