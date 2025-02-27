@@ -1,11 +1,8 @@
 package InterviewQuestions;
 
-import java.util.HashMap;
 import java.util.Scanner;
 
-//LeetCode 1
-public class TwoSum {
-
+public class TwoSumII {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter size of array");
@@ -17,19 +14,18 @@ public class TwoSum {
         }
         System.out.println("enter the Target Element :");
         int target = sc.nextInt();
-        int[] ans = twoSum(arr, target);
+        int[] ans = twoSumII(arr, target);
         for(int num : ans) System.out.print(num + " ");
     }
 
-    public static int[] twoSum(int[] nums, int target) {
-        HashMap<Integer, Integer> map = new HashMap<>();
-        for(int i = 0; i < nums.length; i++) {
-            int compliment = target - nums[i];
-            if(map.containsKey(compliment)) {
-                return new int[] {map.get(compliment), i};
-            }
-            map.put(nums[i], i);
+    private static int[] twoSumII(int[] numbers, int target) {
+        int left = 0;
+        int right = numbers.length - 1;
+        while(left < right) {
+            if(numbers[left] + numbers[right] > target) right--;
+            else if(numbers[left] + numbers[right] < target) left++;
+            else return new int[]{left + 1, right + 1};
         }
-        return new int[] {};
+        return null;
     }
 }
